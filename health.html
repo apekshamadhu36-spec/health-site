@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Health and Emotional Well-Being</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5faf8;
+    color: #333;
+    line-height: 1.7;
+}
+
+header {
+    background: #126b5b;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+nav {
+    background: #084c43;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #aaf0d1;
+}
+
+.hero {
+    background: linear-gradient(120deg, #d7f8e9, #c8e9f5);
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 40px;
+    color: #126b5b;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 15px auto;
+    font-size: 18px;
+}
+
+.btn {
+    background: #168b75;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 10px 5px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #084c43;
+}
+
+section {
+    padding: 55px 8%;
+    scroll-margin-top: 80px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    color: #126b5b;
+    margin-bottom: 25px;
+}
+
+.intro {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #d9e5e0;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #168b75;
+    margin-bottom: 10px;
+}
+
+.alternate {
+    background: #e7f6ef;
+}
+
+ul {
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.routine-item {
+    background: white;
+    padding: 15px;
+    margin: 12px 0;
+    border-left: 5px solid #168b75;
+    border-radius: 6px;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #b8c9c2;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form {
+    text-align: center;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background: #d7f8e9;
+    border-radius: 8px;
+}
+
+.question {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+footer {
+    background: #084c43;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer a {
+    color: #b8f3d5;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 40px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <h1>Health & Emotional Well-Being</h1>
+    <p>Building a Healthier Body and a Happier Mind</p>
+</header>
+
+<!-- NAVIGATION -->
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#physical">Physical Health</a>
+    <a href="#mental">Mental Health</a>
+    <a href="#emotional">Emotions</a>
+    <a href="#routine">Daily Routine</a>
+    <a href="#tools">Wellness Tools</a>
+    <a href="#feedback">Feedback</a>
+</nav>
+
+<!-- HOME -->
+
+<div class="hero" id="home">
+    <h2>Your Health Matters!</h2>
+
+    <p>
+        Health is more than just the absence of illness.
+        It includes physical fitness, mental wellness,
+        emotional balance, and positive relationships.
+    </p>
+
+    <p>
+        Start your journey towards a healthier lifestyle
+        with small steps and positive daily habits.
+    </p>
+
+    <a href="#about">
+        <button class="btn">Explore Our Project</button>
+    </a>
+
+    <a href="#tools">
+        <button class="btn">Check Your Well-Being</button>
+    </a>
+</div>
+
+<!-- ABOUT PROJECT -->
+
+<section id="about">
+    <h2 class="section-title">About Our Project</h2>
+
+    <div class="intro">
+        <p>
+            Health and Emotional Well-Being is a health awareness
+            project designed to encourage people to take care of
+            their physical, mental, and emotional health.
+        </p>
+
+        <p>
+            Students and adults often experience stress because
+            of academic pressure, work, relationships, and daily
+            responsibilities. Ignoring these problems can affect
+            concentration, sleep, confidence, and overall well-being.
+        </p>
+
+        <p>
+            Our website provides educational information, healthy
+            lifestyle suggestions, a daily wellness checklist,
+            a mood check-in, and a simple stress questionnaire.
+        </p>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Our Aim</h3>
+            <p>
+                To create awareness about physical health,
+                mental health, and emotional well-being.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Our Mission</h3>
+            <p>
+                To encourage healthy habits and help people
+                understand the importance of self-care.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Our Vision</h3>
+            <p>
+                To support a healthier and more emotionally
+                aware community.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- PHYSICAL HEALTH -->
+
+<section class="alternate" id="physical">
+    <h2 class="section-title">Physical Health</h2>
+
+    <div class="intro">
+        <p>
+            Physical health refers to how well our body functions.
+            A balanced diet, regular physical activity, adequate
+            sleep, and personal hygiene help maintain good health.
+        </p>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🥗 Balanced Nutrition</h3>
+            <p>
+                Eat a variety of vegetables, fruits, whole grains,
+                protein-rich foods, and other nutritious foods.
+            </p>
+            <ul>
+                <li>Eat regular balanced meals.</li>
+                <li>Include different food groups.</li>
+                <li>Limit excessive sugary drinks.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🚶 Physical Activity</h3>
+            <p>
+                Movement supports heart health, muscle strength,
+                energy, and mood.
+            </p>
+            <ul>
+                <li>Walk regularly.</li>
+                <li>Try cycling or dancing.</li>
+                <li>Take breaks from sitting.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>😴 Good Sleep</h3>
+            <p>
+                Sleep supports learning, memory, recovery,
+                and emotional regulation.
+            </p>
+            <ul>
+                <li>Maintain a regular sleep schedule.</li>
+                <li>Reduce phone use before bedtime.</li>
+                <li>Keep your bedroom comfortable.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>💧 Hydration</h3>
+            <p>
+                Drinking enough fluids supports normal body
+                functions and helps prevent dehydration.
+            </p>
+            <ul>
+                <li>Drink water regularly.</li>
+                <li>Carry a water bottle when needed.</li>
+                <li>Adjust intake for activity and weather.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- MENTAL HEALTH -->
+
+<section id="mental">
+    <h2 class="section-title">Mental Health Awareness</h2>
+
+    <div class="intro">
+        <p>
+            Mental health affects how we think, learn, make
+            decisions, handle challenges, and interact with others.
+            Everyone deserves support for their mental well-being.
+        </p>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>📚 Manage Study Pressure</h3>
+            <p>
+                Divide large tasks into smaller steps.
+                Take short breaks and create a realistic study plan.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌿 Relax Your Mind</h3>
+            <p>
+                Try gentle breathing, quiet time, listening to music,
+                or spending time outdoors.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🤝 Ask for Support</h3>
+            <p>
+                Talk to a trusted friend, family member,
+                teacher, counsellor, or health professional
+                when problems feel difficult to manage.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📵 Digital Balance</h3>
+            <p>
+                Take regular breaks from screens and make time
+                for sleep, hobbies, movement, and face-to-face
+                conversations.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- EMOTIONAL WELL-BEING -->
+
+<section class="alternate" id="emotional">
+    <h2 class="section-title">Emotional Well-Being</h2>
+
+    <div class="intro">
+        <p>
+            Emotional well-being involves recognising feelings,
+            understanding emotional needs, expressing emotions
+            appropriately, and responding to challenges in
+            helpful ways.
+        </p>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>😊 Understand Your Feelings</h3>
+            <p>
+                Notice whether you feel happy, sad, worried,
+                frustrated, calm, or excited. All emotions
+                can provide useful information.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>💬 Express Yourself</h3>
+            <p>
+                Write in a journal or talk with someone you trust.
+                You do not have to handle every difficult feeling alone.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌻 Build Self-Confidence</h3>
+            <p>
+                Recognise your efforts, learn from mistakes,
+                and set realistic goals instead of expecting
+                yourself to be perfect.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>❤️ Healthy Relationships</h3>
+            <p>
+                Practise listening, respect personal boundaries,
+                communicate honestly, and seek supportive friendships.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- DAILY ROUTINE -->
+
+<section id="routine">
+    <h2 class="section-title">Daily Wellness Routine</h2>
+
+    <div class="intro">
+        <p>
+            A healthy routine does not need to be complicated.
+            Start with small habits that fit your daily life.
+        </p>
+    </div>
+
+    <div class="routine-item">
+        <h3>🌅 Morning</h3>
+        <p>
+            Wake up at a regular time, drink water when thirsty,
+            eat a balanced breakfast, and prepare for the day.
+        </p>
+    </div>
+
+    <div class="routine-item">
+        <h3>☀️ Afternoon</h3>
+        <p>
+            Eat a balanced lunch, move around regularly,
+            and take short breaks between study or work sessions.
+        </p>
+    </div>
+
+    <div class="routine-item">
+        <h3>🌇 Evening</h3>
+        <p>
+            Spend time on physical activity, a favourite hobby,
+            or a conversation with friends or family.
+        </p>
+    </div>
+
+    <div class="routine-item">
+        <h3>🌙 Night</h3>
+        <p>
+            Reduce stimulating screen activities, prepare for
+            the next day, and allow enough time for sleep.
+        </p>
+    </div>
+</section>
+
+<!-- DAILY CHECKLIST -->
+
+<section class="alternate" id="checklist">
+    <h2 class="section-title">My Daily Wellness Checklist</h2>
+
+    <p class="intro">
+        Tick the habits you completed today.
+        This checklist is for personal reflection, not a medical test.
+    </p>
+
+    <div class="card" style="max-width:600px; margin:25px auto;">
+        <label>
+            <input type="checkbox" class="habit">
+            I ate balanced meals.
+        </label>
+        <br>
+
+        <label>
+            <input type="checkbox" class="habit">
+            I drank enough fluids for my needs.
+        </label>
+        <br>
+
+        <label>
+            <input type="checkbox" class="habit">
+            I moved my body during the day.
+        </label>
+        <br>
+
+        <label>
+            <input type="checkbox" class="habit">
+            I took time to relax.
+        </label>
+        <br>
+
+        <label>
+            <input type="checkbox" class="habit">
+            I connected with someone supportive.
+        </label>
+        <br>
+
+        <label>
+            <input type="checkbox" class="habit">
+            I made time for sufficient sleep.
+        </label>
+        <br><br>
+
+        <button class="btn" onclick="checkHabits()">
+            View My Progress
+        </button>
+
+        <div id="habitResult" class="result" hidden></div>
+    </div>
+</section>
+
+<!-- WELLNESS TOOLS -->
+
+<section id="tools">
+    <h2 class="section-title">Wellness Tools</h2>
+
+    <div class="intro">
+        <p>
+            Use these simple activities to reflect on your feelings
+            and think about the kind of support you might need.
+            They are educational tools, not diagnostic tests.
+        </p>
+    </div>
+
+    <!-- MOOD TRACKER -->
+
+    <div class="card" style="max-width:700px; margin:25px auto;">
+        <h3>😊 Daily Mood Check-In</h3>
+
+        <p>How are you feeling today?</p>
+
+        <select id="mood">
+            <option value="">Choose your mood</option>
+            <option value="Happy">Happy</option>
+            <option value="Calm">Calm</option>
+            <option value="Okay">Okay</option>
+            <option value="Worried">Worried</option>
+            <option value="Sad">Sad</option>
+            <option value="Stressed">Stressed</option>
+        </select>
+
+        <br>
+
+        <button class="btn" onclick="checkMood()">
+            Check In
+        </button>
+
+        <div id="moodResult" class="result" hidden></div>
+    </div>
+
+    <!-- STRESS REFLECTION -->
+
+    <div class="card" style="max-width:700px; margin:25px auto;">
+        <h3>🌿 Stress Reflection</h3>
+
+        <p>
+            Think about your recent experiences.
+            Choose the statement that best describes how
+            manageable your stress has felt.
+        </p>
+
+        <select id="stress">
+            <option value="">Choose an option</option>
+            <option value="low">My stress feels manageable.</option>
+            <option value="medium">I sometimes feel overwhelmed.</option>
+            <option value="high">I often feel overwhelmed.</option>
+        </select>
+
+        <br>
+
+        <button class="btn" onclick="checkStress()">
+            View Suggestions
+        </button>
+
+        <div id="stressResult" class="result" hidden></div>
+    </div>
+</section>
+
+<!-- HEALTHY TIPS -->
+
+<section class="alternate" id="tips">
+    <h2 class="section-title">Healthy Lifestyle Tips</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>1. Eat Well</h3>
+            <p>
+                Choose varied, nutritious foods and enjoy regular
+                meals that meet your needs.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>2. Stay Active</h3>
+            <p>
+                Choose activities you enjoy and build movement
+                into your normal day.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>3. Rest Enough</h3>
+            <p>
+                Protect your sleep time and keep a consistent
+                bedtime and wake-up routine.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>4. Stay Connected</h3>
+            <p>
+                Spend time with people who treat you with
+                care and respect.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>5. Be Kind to Yourself</h3>
+            <p>
+                Accept that difficult days happen.
+                Focus on progress rather than perfection.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>6. Seek Help When Needed</h3>
+            <p>
+                If emotional difficulties persist or affect daily
+                life, speak with a qualified professional.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- SELF CARE -->
+
+<section id="selfcare">
+    <h2 class="section-title">Self-Care Activities</h2>
+
+    <div class="intro">
+        <p>
+            Self-care means making time for activities that
+            support your health and help you manage everyday
+            responsibilities.
+        </p>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>📖 Reading</h3>
+            <p>Read a book or a few pages of something you enjoy.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎵 Music</h3>
+            <p>Listen to music that helps you feel comfortable.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌳 Nature</h3>
+            <p>Spend some time outdoors when it is safe and practical.</p>
+        </div>
+
+        <div class="card">
+            <h3>✍️ Journaling</h3>
+            <p>Write down your thoughts, feelings, or daily experiences.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FEEDBACK -->
+
+<section class="alternate" id="feedback">
+    <h2 class="section-title">Feedback Form</h2>
+
+    <p class="intro">
+        Share your thoughts about our Health and Emotional
+        Well-Being awareness website.
+    </p>
+
+    <form onsubmit="submitFeedback(event)">
+
+        <input type="text" id="name"
+               placeholder="Enter your name" required>
+        <br>
+
+        <select id="rating" required>
+            <option value="">Rate this website</option>
+            <option value="Excellent">Excellent</option>
+            <option value="Good">Good</option>
+            <option value="Average">Average</option>
+            <option value="Needs improvement">Needs improvement</option>
+        </select>
+        <br>
+
+        <textarea id="feedbackText"
+                  placeholder="Write your feedback"
+                  rows="5" required></textarea>
+        <br>
+
+        <button class="btn" type="submit">
+            Submit Feedback
+        </button>
+
+    </form>
+
+    <p id="feedbackResult" class="intro"></p>
+</section>
+
+<!-- ABOUT TEAM -->
+
+<section id="team">
+    <h2 class="section-title">About the Project Team</h2>
+
+    <div class="intro">
+        <p>
+            This project aims to spread awareness about the
+            importance of physical health, mental health,
+            and emotional well-being.
+        </p>
+
+        <p>
+            Project Name: Health and Emotional Well-Being
+        </p>
+
+        <p>
+            Department: Computer Science and Engineering
+        </p>
+
+        <p>
+            Project Type: Health Awareness Website
+        </p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+    <h3>Health & Emotional Well-Being</h3>
+
+    <p>Small healthy habits can make a meaningful difference.</p>
+
+    <p>
+        <a href="#home">Back to Top</a>
+    </p>
+
+    <p>
+        Disclaimer: This website provides general educational
+        information and does not replace professional medical care.
+    </p>
+
+    <p>&copy; 2026 Health Awareness Project</p>
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+function checkHabits() {
+    let habits = document.querySelectorAll(".habit");
+    let completed = 0;
+
+    habits.forEach(function(habit) {
+        if (habit.checked) {
+            completed++;
+        }
+    });
+
+    let result = document.getElementById("habitResult");
+
+    result.hidden = fal
